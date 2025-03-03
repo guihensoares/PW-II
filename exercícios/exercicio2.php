@@ -11,25 +11,21 @@
             <legend>Informe a sua idade</legend>
             <label for="idade">Sua idade</label>
             <input type="number" name="idade" id="idade" required>
-            <input type="button" value="Enviar">
+            <input type="submit" value="Enviar">
         </fieldset>
     </form>
 
     <?php
-       if (isset($_GET['idade']) > 18) {
-          echo "Pode votar!";
-       }
-       if (isset($_GET ['idade']) >= 60) {
-          echo "Não é obrigado a votar";
-       }
-       if (isset(($_GET ['idade'])) == 16) {
-          echo "Não é obrigado a votar";
-       }
-       if (isset(($_GET ['idade'])) == 17) {
-          echo "Não é obrigado a votar";
-       } 
-       else {
-          echo "Não pode votar!";
+       if (isset($_GET['idade'])) {
+          $idade = $_GET['idade'];
+
+          if($idade < 16) {
+            echo "Você não pode votar!";
+          } else if ($idade == 16 || $idade == 17 || $idade >= 70) {
+            echo "você pode votar, mas não é obrigatório!";
+          } else {
+            echo "Você já pode votar, e a votação é obrigatória!";
+          }
        }
     ?>
 </body>
