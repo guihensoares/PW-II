@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vogal e Consoante</title>
 </head>
 <body>
     <form action="exercicio5.php" method="get">
