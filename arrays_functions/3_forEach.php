@@ -6,10 +6,10 @@
         'Ferrari',
     ];
 
-    // foreach ($estacionamento as $key => $value) {
-    //     echo '<hr>';
-    //     echo "<b>Veículo " . $key . ":</b> " . $value;
-    // }
+    //  foreach ($estacionamento as $key => $value) {
+    //      echo '<hr>';
+    //      echo "<b>Veículo " . $key . ":</b> " . $value;
+    //  }
 
     $patio = [
         [
