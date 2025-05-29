@@ -1,5 +1,6 @@
 <?php 
-
+    include '../../includes/header.php';
+    include '../../includes/menu.php';
     include '../../config/connection.php';
 
     $stmt = $pdo->query('SELECT * FROM usuario');
@@ -21,3 +22,4 @@
     <?php
     }    
     ?>
+    <?php include '../../includes/footer.php';?>

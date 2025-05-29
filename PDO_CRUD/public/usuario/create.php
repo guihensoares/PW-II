@@ -1,16 +1,29 @@
 <?php 
+    include '../../includes/header.php';
+    include '../../includes/menu.php';
     include '../../config/connection.php';
 ?>
 
-<form action="create.php" method="post">
-    <label for="username">Nome do Usuário</label>
-    <input type="text" name="username" id="username">
-    <br><br>
-    <label for="password">Senha</label>
-    <input type="password" name="password" id="password">
-    <br><br>
-    <button type="submit">Cadastrar</button>
-</form>
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+        <div class="col-12 col-lg-4 p-4 border bg-tertiary shadow rounded">
+            <form action="create.php" method="post">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Nome do Usuário</label>
+                    <input type="text" name="username" id="username" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Senha</label>
+                    <input type="password" name="password" id="password" class="form-control">
+                </div>
+                
+                <br><br>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </form> 
+        </div>
+    </div>
+</div>
+
 
 <?php 
     $username = isset($_POST['username']) ? $_POST['username'] : exit() ;
@@ -23,3 +36,5 @@
     $stmt->execute();
 
 ?>
+
+<?php include '../../includes/footer.php';?>
