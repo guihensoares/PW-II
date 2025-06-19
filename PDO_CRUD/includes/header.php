@@ -8,9 +8,6 @@
     <style>
         body{
             background: #F2F0EF;
-            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6165VGMheV9FkSK0-crP8ofrNHV3YitjJFA&s');
-            background-repeat: none;
-            background-position: center;
         }
     </style>
 </head>

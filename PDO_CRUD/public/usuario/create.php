@@ -18,7 +18,7 @@
                 </div>
                 
                 <br><br>
-                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                <button type="submit" class="btn btn-warning">Cadastrar</button>
             </form> 
         </div>
     </div>
