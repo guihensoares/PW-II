@@ -1,0 +1,58 @@
+body {
+    background-color: var(--white);
+}
+
+.anuncio-info {
+  border: 2px solid var(--blue); 
+  border-radius: 10px 50px 10px 10px;
+  padding: 20px;
+  background-color: var(--white);
+}
+
+.anuncio-proprietario {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 10px 15px;
+  border-radius: 0 0 10px 10px;
+  margin: -1px;
+}
+
+.botao {
+  background-color: var(--white);
+  border: none;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.botao:hover {
+  background-color: var(--white);
+  color: #030356;
+}
+
+#navStyle {
+    color: var(--blue);
+    text-decoration: none;
+    margin: 5px;
+}
+
+#navStyle :hover {
+    color:#030356;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.navbar-expand-lg {
+    background-color: var(--white) ;
+}
+
+:root {
+    --red: #FF5900;
+    --pink: #FF5574;
+    --blue: #0000FF;
+    --white: #F6EEE3;
+    --black: #000000;
+
+}
