@@ -3,7 +3,7 @@
 <section class="car-blue d-flex align-items-center">
     <div class="d-flex align-items-center col-6 justify-content-center flex-column">
         <h1 class="fx-border">A Melhor concessionaria <strong class="text-decoration-underline">digital</strong> <br>
-            de <strong class="text-decoration-underline">vendas</strong> de carro!</h1>
+            de <strong class="text-decoration-underline">vendas</strong> de veículos!</h1>
     </div>
 </section>
 

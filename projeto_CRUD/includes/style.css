@@ -1,5 +1,5 @@
 body {
-    background-color: var(--white);
+  background-color: var(--white);
 }
 
 strong {
@@ -11,8 +11,8 @@ strong {
   height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
-  color: var(--black);
+  background-position: top 100%;
+  color: aliceblue;
 }
 
 #titulostyle{
