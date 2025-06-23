@@ -24,13 +24,13 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a id="navStyle" aria-current="page" href="#">Home</a>
+                        <a id="navStyle" aria-current="page" href="/PW-II/projeto_CRUD/public/index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a id="navStyle" href="#">Anúncios</a>
+                        <a id="navStyle" href="/PW-II/projeto_CRUD/public/anuncio/read-anuncio.php">Anúncios</a>
                     </li>
                     <li class="nav-item">
-                        <a id="navStyle" href="#">Criar Anúncios</a>
+                        <a id="navStyle" href="/PW-II/projeto_CRUD/public/anuncio/create-anuncio.php">Criar Anúncios</a>
                     </li>
                 </ul>
             </div>

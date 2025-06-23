@@ -113,10 +113,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ?>
 
-<h1>bom dia</h1>
+<div class="d-flex justify-content-center m-2" id="titulostyle">
+    <h1>Atualizar Anúncio</h1>
+</div>
 
 <div class="container-fluid">
-    <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-center m-3">
         <div class="col-12 col-lg-4 p-4 border bg-tertiary shadow rounded">
 
             <form action="update-anuncio.php" method="POST">
@@ -139,38 +141,44 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         value="<?php echo $anuncio[0]['data_publicacao']; ?>">
                 </div>
 
-                <div class="mb-3">
-                    <label for="marca_veiculo" class="form-label">Editar marca do veículo</label>
-                    <input type="text" name="marca_veiculo" id="marca_veiculo" class="form-control"
-                        value="<?php echo $anuncio[0]['marca_veiculo']; ?>">
-                </div>
-                <div class="mb-3">
-                    <label for="modelo_veiculo" class="form-label">Editar modelo do veículo</label>
-                    <input type="text" name="modelo_veiculo" id="modelo_veiculo" class="form-control"
-                        value="<?php echo $anuncio[0]['modelo_veiculo']; ?>">
+                <div class="row">
+                    <div class="mb-3 col-6">
+                        <label for="marca_veiculo" class="form-label">Editar marca do veículo</label>
+                        <input type="text" name="marca_veiculo" id="marca_veiculo" class="form-control"
+                            value="<?php echo $anuncio[0]['marca_veiculo']; ?>">
+                    </div>
+                    <div class="mb-3 col-6">
+                        <label for="modelo_veiculo" class="form-label">Editar modelo do veículo</label>
+                        <input type="text" name="modelo_veiculo" id="modelo_veiculo" class="form-control"
+                            value="<?php echo $anuncio[0]['modelo_veiculo']; ?>">
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="ano_veiculo" class="form-label">Editar ano do veículo</label>
                     <input type="number" name="ano_veiculo" id="ano_veiculo" class="form-control"
                         value="<?php echo $anuncio[0]['ano_veiculo']; ?>">
                 </div>
-                <div class="mb-3">
-                    <label for="cor_veiculo" class="form-label">Editar cor do veículo</label>
-                    <input type="text" name="cor_veiculo" id="cor_veiculo" class="form-control"
-                        value="<?php echo $anuncio[0]['cor_veiculo']; ?>">
+                <div class="row">
+
+                    <div class="mb-3 col-6">
+                        <label for="cor_veiculo" class="form-label">Editar cor do veículo</label>
+                        <input type="text" name="cor_veiculo" id="cor_veiculo" class="form-control"
+                            value="<?php echo $anuncio[0]['cor_veiculo']; ?>">
+                    </div>
+                    <div class="mb-3 col-6">
+                        <label for="placa_veiculo" class="form-label">Editar placa do veículo</label>
+                        <input type="text" name="placa_veiculo" id="placa_veiculo" class="form-control"
+                            value="<?php echo $anuncio[0]['placa_veiculo']; ?>">
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="placa_veiculo" class="form-label">Editar placa do veículo</label>
-                    <input type="text" name="placa_veiculo" id="placa_veiculo" class="form-control"
-                        value="<?php echo $anuncio[0]['placa_veiculo']; ?>">
-                </div>
+
 
                 <div class="mb-3">
                     <label for="nome_proprietario" class="form-label">Editar nome do Proprietário</label>
                     <input type="text" name="nome_proprietario" id="nome_proprietario" class="form-control"
                         value="<?php echo $anuncio[0]['nome_proprietario']; ?>">
                 </div>
-                <div class="mb-3">
+                <div>
                     <label for="telefone_proprietario" class="form-label">Editar telefone do Proprietário</label>
                     <input type="number" name="telefone_proprietario" id="telefone_proprietario" class="form-control"
                         value="<?php echo $anuncio[0]['telefone_proprietario']; ?>">
@@ -178,7 +186,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <br><br>
 
-                <button type="submit" class="btn btn-warning">Atualizar anuncio</button>
+                <button type="submit" class="btn btn-primary w-100">Atualizar anuncio</button>
             </form>
         </div>
     </div>

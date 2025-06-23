@@ -3,9 +3,12 @@
         include '../../includes/header.php';
     ?>
 
+<div class="d-flex justify-content-center m-2" id="titulostyle">
+    <h1>Criar Anúncio</h1>
+</div>
 
 <div class="container-fluid">
-    <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-center m-3">
         <div class="col-12 col-lg-4 p-4 border bg-tertiary shadow rounded">
             <form action="create-anuncio.php" method="post">
                 <div class="mb-3">
@@ -21,39 +24,47 @@
                     <input type="date" name="data_publicacao" id="data_publicacao" class="form-control">
                 </div>
 
-                <div class="mb-3">
+
+                <div class="row">
+                     <div class="mb-3 col-md-6">
                     <label for="marca_veiculo" class="form-label">Marca do veículo</label>
                     <input type="text" name="marca_veiculo" id="marca_veiculo" class="form-control">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 col-md-6">
                     <label for="modelo_veiculo" class="form-label">Modelo do veículo</label>
                     <input type="text" name="modelo_veiculo" id="modelo_veiculo" class="form-control">
                 </div>
+                </div>
+               
                 <div class="mb-3">
                     <label for="ano_veiculo" class="form-label">Ano do veículo</label>
                     <input type="number" name="ano_veiculo" id="ano_veiculo" class="form-control">
                 </div>
-                <div class="mb-3">
+
+                <div class="row">
+                    <div class="mb-3 col-md-6">
                     <label for="cor_veiculo" class="form-label">Cor do veículo</label>
                     <input type="text" name="cor_veiculo" id="cor_veiculo" class="form-control">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 col-md-6">
                     <label for="placa_veiculo" class="form-label">Placa do veículo</label>
                     <input type="text" name="placa_veiculo" id="placa_veiculo" class="form-control">
                 </div>
+                </div>
+                
 
                 <div class="mb-3">
                     <label for="nome_proprietario" class="form-label">Nome do Proprietário</label>
                     <input type="text" name="nome_proprietario" id="nome_proprietario" class="form-control">
                 </div>
-                <div class="mb-3">
+                <div>
                     <label for="telefone_proprietario" class="form-label">Telefone do Proprietário</label>
                     <input type="number" name="telefone_proprietario" id="telefone_proprietario" class="form-control">
                 </div>
                 
                 <br><br>
 
-                <button type="submit" class="btn btn-warning">Publicar anuncio</button>
+                <button type="submit" class="btn btn-primary w-100">Publicar anuncio</button>
             </form> 
         </div>
     </div>
