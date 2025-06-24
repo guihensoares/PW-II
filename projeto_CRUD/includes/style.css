@@ -6,22 +6,41 @@ strong {
   color: var(--blue);
 }
 
-.car-blue{
+.car-blue {
   background-image: url(../imagens/car2.png);
   height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top 100%;
-  color: aliceblue;
+  color: var(--black);
 }
 
-#titulostyle{
+#titulostyle {
   background-color: var(--blue);
   color: var(--white);
 }
 
+.login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-login {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.btn-login:hover {
+  background-color:#030356;
+  color: var(--white);
+}
+
 .anuncio-info {
-  border: 2px solid var(--blue); 
+  border: 2px solid var(--blue);
   border-radius: 10px 50px 10px 10px;
   padding: 20px;
   background-color: var(--white);
@@ -54,7 +73,7 @@ strong {
 }
 
 .navbar-expand-lg {
-  background-color: var(--white) ;
+  background-color: var(--white);
 }
 
 :root {
