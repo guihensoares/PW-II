@@ -5,13 +5,10 @@ session_start();
 ?>
 
 <?php include '../includes/header.php' ?>
-<div class="d-flex justify-content-end" style="margin-right: 10px">
-    <p class="fw-bold"> O usuário <strong><?php echo $_SESSION['email']; ?></strong> está conectado</p>
-</div>
 
 <section class="car-blue d-flex align-items-center">
     <div class="d-flex align-items-center col-6 justify-content-center flex-column">
-        <h1 class="fw-bold">A Melhor concessionaria <strong class="text-decoration-underline">digital</strong> <br>
+        <h1 class="texto">A Melhor concessionaria <strong>digital</strong> <br>
             de <strong class="text-decoration-underline">vendas</strong> de veículos!</h1>
     </div>
 </section>

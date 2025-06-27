@@ -7,12 +7,13 @@ strong {
 }
 
 .car-blue {
-  background-image: url(../imagens/car2.png);
+  background-image: url(../imagens/car.png);
   height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top 100%;
   color: var(--black);
+  font-family: "Kanit";
 }
 
 #titulostyle {
@@ -67,9 +68,10 @@ strong {
 }
 
 #navStyle {
-  color: var(--blue);
+  color: var(--black);
   text-decoration: none;
   margin: 5px;
+  font-family: "Kanit";
 }
 
 .navbar-expand-lg {
@@ -83,4 +85,10 @@ strong {
   --white: #F6EEE3;
   --black: #000000;
 
+}
+
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
