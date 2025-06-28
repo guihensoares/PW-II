@@ -2,23 +2,32 @@ body {
   background-color: var(--white);
 }
 
-strong {
-  color: var(--blue);
-}
-
-.car-blue {
-  background-image: url(../imagens/car.png);
-  height: 600px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top 100%;
-  color: var(--black);
+#info1, #info2, #info3 {
+  background-color:rgba(0, 0, 0, 0.7) ;
+  height: 200px;
+  border-radius: 15px;
+  color: var(--white);
   font-family: "Kanit";
 }
 
 #titulostyle {
   background-color: var(--blue);
   color: var(--white);
+}
+
+.texto{
+  font-family: "Kanit";
+  color: var(--white);
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .login-container {
@@ -74,8 +83,10 @@ strong {
   font-family: "Kanit";
 }
 
-.navbar-expand-lg {
+.navbar {
   background-color: var(--white);
+  position: relative;
+  z-index: 3;
 }
 
 :root {

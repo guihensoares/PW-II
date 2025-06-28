@@ -17,6 +17,12 @@
 </head>
 </style>
 
+<?php
+
+session_start();
+
+?> 
+
 <body>
 
     <nav class="navbar navbar-expand-lg">
