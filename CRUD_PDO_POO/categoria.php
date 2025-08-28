@@ -11,9 +11,17 @@
         }
 
         public function inserir($nome){
+            global $pdo;
+            //logica confirmar senha
+            if (empty($nome)) {
+                return "Favor preencher todos os campos";
+            }
+
             $stmt = $pdo->prepare("INSERT INTO categoria (nome) VALUES (:nome)");
 	        $stmt->bindParam(':nome', $nome);
 	        $stmt->execute();
+
+            return "Categoria cadastrada com sucesso";
         }
 
         public function buscar($id){

@@ -1,4 +1,5 @@
 <?php include 'header.php'; ?>
+<?php include 'usuario.php'; ?>
 
     <div class="container-fluid">
         <div class="row d-flex justify-content-center">
@@ -7,7 +8,7 @@
                 <div class="card my-5 bg-light shadow">
                     <img src="https://ogimg.infoglobo.com.br/cultura/livros/20333475-137-ef2/FT1086A/760/Tolkien.jpg"class="card-img-top w-100">
                     <div class="card-body">
-                        <form action="" method="post">
+                        <form action="./cadastro_usuario.php" method="post">
 
                             <div class="mb-3">
                                 <label for="nome" class="label-control">Nome Completo</label>
@@ -42,6 +43,21 @@
             </div>
         </div>
     </div>
+
+    <?php 
+        if (!isset($_POST['nome'])) 
+            exit();
+        if (!isset($_POST['email'])) 
+            exit();
+        if (!isset($_POST['senha'])) 
+            exit();
+        if (!isset($_POST['confirmar_senha'])) 
+            exit();
+
+        $usuario = new Usuario('', '', '', '');
+
+        echo $usuario->inserir($_POST['nome'], $_POST['email'], $_POST['senha'], $_POST['confirmar_senha'], 'comum');
+    ?>
 
 
 <?php include 'footer.php'; ?>

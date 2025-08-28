@@ -13,11 +13,19 @@
         }
 
         public function inserir($nome, $biografia, $foto){
+            global $pdo;
+            //logica confirmar senha
+            if (empty($nome) || empty($biografia) || empty($foto)) {
+                return "Favor preencher todos os campos";
+            }
+
             $stmt = $pdo->prepare("INSERT INTO autor (nome, biografia, foto) VALUES (:nome, :biografia, :foto)");
 	        $stmt->bindParam(':nome', $nome);
 	        $stmt->bindParam(':biografia', $biografia);
 	        $stmt->bindParam(':foto', $foto);
 	        $stmt->execute();
+
+            return "Autor cadastrado com sucesso";
         }
 
         public function buscar($id){

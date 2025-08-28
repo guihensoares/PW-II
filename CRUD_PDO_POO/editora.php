@@ -13,11 +13,19 @@
         }
 
         public function inserir($nome, $site, $email){
+            global $pdo;
+            //logica confirmar senha
+            if (empty($nome) || empty($site) || empty($email)) {
+                return "Favor preencher todos os campos";
+            }
+
             $stmt = $pdo->prepare("INSERT INTO editora (nome, site, email) VALUES (:nome, :site, :email)");
 	        $stmt->bindParam(':nome', $nome);
 	        $stmt->bindParam(':site', $site);
 	        $stmt->bindParam(':email', $email);
 	        $stmt->execute();
+
+            return "Editora cadastrada com sucesso";
         }
 
         public function buscar($id){
